@@ -3,10 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
+import { PrincipalComponent } from './components/inicio/principal/principal.component';
+import { CloudComponent } from './components/inicio/principal/cloud/cloud.component';
+import { FontEndComponent } from './components/inicio/principal/font-end/font-end.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    PrincipalComponent,
+    CloudComponent,
+    FontEndComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
