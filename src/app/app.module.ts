@@ -8,6 +8,7 @@ import { PrincipalComponent } from './components/inicio/principal/principal.comp
 import { CloudComponent } from './components/inicio/principal/cloud/cloud.component';
 import { FontEndComponent } from './components/inicio/principal/font-end/font-end.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { DockerComponent } from './components/inicio/principal/docker/docker.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     PrincipalComponent,
     CloudComponent,
     FontEndComponent,
-    FooterComponent
+    FooterComponent,
+    DockerComponent
   ],
   imports: [
     BrowserModule,
