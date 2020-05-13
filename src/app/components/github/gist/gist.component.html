@@ -1,0 +1,20 @@
+<h4 class="text-3xl text-center mt-6">{{ cantidad }} Fragmentos de código</h4>
+
+<div class="flex justify-center mt-6 mb-10" >
+    <table class="table-auto">
+        <thead>
+            <tr>
+                <th class="px-4 py-2 text-left">Creado</th>
+                <th class="px-4 py-2 text-left">Descripción</th>
+                <th class="px-4 py-2">Enlace</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let gists of listGist" >
+                <td class="border px-4 py-2">{{ gists.created_at | date:'dd - MM - yyyy' }}</td>
+                <td class="border px-4 py-2">{{ gists.description }}</td>
+                <td class="border px-4 py-2 text-center"><a href="{{ gists.html_url }}" target="_blank"> <i class="fas fa-link"></i> </a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

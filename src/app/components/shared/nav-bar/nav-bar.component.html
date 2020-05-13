@@ -1,10 +1,11 @@
 <section class="flex justify-between items-center p-4 shadow-md">
     <div>
-        <h3>El Cascarudo</h3>
+        <h3 class="text-3xl"><a [routerLink]="[ '/']">El Cascarudo</a></h3>
     </div>
 
     <div>
-        <a href="https://github.com/elcascarudo-dev" target="_blank" class="h-10 w-10 text-3xl text-gray-600 hover:text-black">
+        <a class="text-gray-600 p-2 mx-3 rounded hover:bg-gray-600 hover:text-white " [routerLink]="[ '/gist']"> Fragmentos </a>
+        <a href="https://github.com/elcascarudo-dev" target="_blank" class="h-10 w-10 text-2xl text-gray-600 hover:text-black">
             <i class="fab fa-github "></i>
         </a>
     </div>

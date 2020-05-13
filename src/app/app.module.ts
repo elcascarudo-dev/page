@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
@@ -9,6 +11,7 @@ import { CloudComponent } from './components/inicio/principal/cloud/cloud.compon
 import { FontEndComponent } from './components/inicio/principal/font-end/font-end.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { DockerComponent } from './components/inicio/principal/docker/docker.component';
+import { GistComponent } from './components/github/gist/gist.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,13 @@ import { DockerComponent } from './components/inicio/principal/docker/docker.com
     CloudComponent,
     FontEndComponent,
     FooterComponent,
-    DockerComponent
+    DockerComponent,
+    GistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
